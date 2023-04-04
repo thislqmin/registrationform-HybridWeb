@@ -1,3 +1,50 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-icon name="keypad"></ion-icon>
+    </ion-buttons>
+    <ion-title>Form Registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registration</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Sebelum menggunakan aplikasi ini silahkan anda melakukan registasi atau
+      pendaftaran pada form berikut ini
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating" type="text">Nama Lengkap</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" type="email">Alamat</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating" type="email">Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-datetime
+          value="2022-04-21T00:00:00"
+          min="1900-01-01T00:00:00"
+          max="2022-05-31T23:59:59"
+        ></ion-datetime>
+      </ion-item>
+      <ion-button color="success" expand="block">Submit</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="secondary">
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
